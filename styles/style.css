@@ -1,0 +1,51 @@
+@import "font-awesome.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.dark {     
+   background:  #202020;
+}
+.container {
+    width: 940px;
+    margin: 0 auto; 
+}
+.author-name {
+    font-family: Georgia, serif;
+    color:  #9b9b9b;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    text-align: left;
+}
+header {
+    padding: 52px 0;    
+}
+.social-networks {
+    float: right;
+    color:  #9b9b9b;
+    line-height: 30px;
+    size: 15px;
+}
+.social-networks a {
+    color:  #9b9b9b;
+    margin: 0 5px;
+}
+.welcome h2 {
+    font-family: Georgia;
+    color:  #9b9b9b;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.welcome h1 {
+    font-family: Georgia;
+    color:  #9b9b9b;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
