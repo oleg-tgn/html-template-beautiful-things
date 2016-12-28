@@ -4,56 +4,45 @@
     margin: 0;
     padding: 0;
 }
+body {
+    color:  #9b9b9b;
+}
 .clear {
+     font-family: Georgia, serif;   
     clear: both;
 }
 .dark {     
    background:  #202020;
 }
 .container {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto; 
+    padding: 0 20px;
 }
-.author-name {
-    font-family: Georgia, serif;
-    color:  #9b9b9b;
+.author-name {   
     font-size: 18px;
     font-style: italic;
     line-height: 30px;
     text-align: left;
+    letter-spacing: 1.1px;    
 }
 header {
-    padding: 52px 0;    
+    padding: 43px 0 47px 0;    
 }
 .social-networks {
-    float: right;
-    color:  #9b9b9b;
+    float: right;   
     line-height: 30px;
     size: 15px;
 }
-.social-networks a {
-    color:  #9b9b9b;
+.social-networks a {    
     margin: 0 5px;
-}
-.welcome h2 {
-    font-family: Georgia;
     color:  #9b9b9b;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-.welcome h1 {
-    font-family: Georgia;
-    color:  #9b9b9b;
-    font-size: 60px;
-    font-weight: 400;
-    text-align: center;
 }
 .slider__image-wrap {
     display: inline-block;
     position: relative;
-    width: 940px;
-    height: 407px;
+    max-width: 940px;
+    max-height: 407px;
     border: 1px solid rgba(155, 155, 155, 0.5);    
 }
 .slider__image-wrap:before {
@@ -70,8 +59,60 @@ header {
 .slider__image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .welcome {
-    margin-top: 62px;
+    margin-top: 55px;
+}
+.welcome__my-portfolio {
+    font-family: Georgia;    
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.welcome__i-make {
+    font-family: Georgia;   
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 0.7px;
+}
+.services {
+    display: inline-block;
+    margin: 60px -27.5px 73px;
+}
+.services__item {
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 27.5px;
+    box-sizing: border-box;
+}
+.services__title {
+    font-family: Georgia;
+    color:  #9b9b9b;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.services__text {
+    color:  #9b9b9b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; 
+}
+.services__icon {
+    margin-right: 4px;
+}
+
+@media (max-width: 767px) {
+    .services__item {
+        width: 100%;
+        padding-bottom: 55px;
+    }
+    .welcome__i-make {
+        font-size: 35px;
+    }
 }
