@@ -11,13 +11,15 @@ body {
      font-family: Georgia, serif;   
     clear: both;
 }
-.dark {     
+.wrapper {     
    background:  #202020;
 }
 .container {
     max-width: 940px;
     margin: 0 auto; 
     padding: 0 20px;
+    position: relative;
+    z-index: 10;
 }
 .author-name {   
     font-size: 18px;
@@ -105,6 +107,21 @@ header {
 }
 .services__icon {
     margin-right: 4px;
+}
+.first-slide {
+    position: relative;
+    background: #202020;
+}
+.first-slide:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 387px;    
+    background: url("../img/header-bg.jpg") 0 0 repeat;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
