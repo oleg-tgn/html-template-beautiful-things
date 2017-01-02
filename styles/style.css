@@ -5,10 +5,10 @@
     padding: 0;
 }
 body {
+    font-family:  Georgia, serif; 
     color:  #9b9b9b;
 }
-.clear {
-     font-family: Georgia, serif;   
+.clear {      
     clear: both;
 }
 .wrapper {     
@@ -21,12 +21,15 @@ body {
     position: relative;
     z-index: 10;
 }
-.author-name {   
+.author-name, .author-post {   
     font-size: 18px;
     font-style: italic;
     line-height: 30px;
     text-align: left;
-    letter-spacing: 1.1px;    
+    letter-spacing: 0.6px;   
+}
+.author-post {
+    letter-spacing: 0.2px;
 }
 header {
     padding: 43px 0 47px 0;    
@@ -40,41 +43,47 @@ header {
     margin: 0 5px;
     color:  #9b9b9b;
 }
+.slider {
+    margin: 0 -1px; /*1px на рамки*/
+}
+.slider__content {
+    width: 100%;
+    font-size: 0;
+}
 .slider__image-wrap {
     display: inline-block;
     position: relative;
-    max-width: 940px;
-    max-height: 407px;
-    border: 1px solid rgba(155, 155, 155, 0.5);    
+    max-width: 942px;
+    max-height: 409px;
+      
 }
 .slider__image-wrap:before {
     content: "";
     display: block;
-    width: calc(100% - 12px);
-    height: calc(100% - 12px);
-    top: 5px;
-    left: 5px;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    top: 6px;
+    left: 6px;
     position: absolute;
     z-index: 10;
     border: 1px solid rgba(155, 155, 155, 0.5);    
 }
 .slider__image {
-    width: 100%;
+    width: calc(100% - 2px);
     height: auto;
     display: block;
+    border: 1px solid rgba(155, 155, 155, 0.5);  
 }
 
 .welcome {
     margin-top: 51px;
 }
 .welcome__my-portfolio {
-    font-family: Georgia;    
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
-.welcome__i-make {
-    font-family: Georgia;   
+.welcome__i-make {  
     font-size: 60px;
     font-weight: 400;
     text-align: center;
@@ -92,7 +101,6 @@ header {
     box-sizing: border-box;
 }
 .services__title {
-    font-family: Georgia;
     color:  #9b9b9b;
     font-size: 22px;
     font-weight: 400;
