@@ -123,6 +123,29 @@ header {
     left: 0;
     z-index: 1;
 }
+.gallery-wrapper {
+    background: url("../img/header-bg.jpg") 0 0 repeat;
+    padding: 77px 0;
+}
+
+.gallery {
+    display: inline-block;
+    margin: -10px;
+}
+
+.gallery__preview {
+    width: 50%;
+    float: left;
+    font-size: 0;/*убираем отступ после картинки*/
+    
+}
+
+.gallery__preview-item {
+    width: calc(50% - 20px);
+    float: left; 
+    padding: 10px;
+}
+
 
 @media (max-width: 767px) {
     .services__item {
