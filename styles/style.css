@@ -87,12 +87,12 @@ header {
     font-size: 60px;
     font-weight: 400;
     text-align: center;
-    margin-top: 12px;
-    letter-spacing: 0.7px;
+    margin-top: 18px;
+    letter-spacing: 0.8px;
 }
 .services {
     display: inline-block;
-    margin: 62px -27.5px 93px;
+    margin: 62px -27.5px 72px;
 }
 .services__item {
     width: calc(100% / 3);
@@ -133,7 +133,7 @@ header {
 }
 .gallery-wrapper {
     background: url("../img/header-bg.jpg") 0 0 repeat;
-    padding: 74px 0;
+    padding: 77px 0;
 }
 
 .gallery {
@@ -176,7 +176,119 @@ header {
     line-height: 22px;
     text-align: left;
 }
+.contact {
+    padding: 72px 0;
+    display: inline-block;
+}
+.contact__form {
+    display: block;
+    width: calc(50% - 11px);
+    margin: -21px 0 0 0;
+    padding-right: 11px;
+    float: left;
+}
 
+.contact__input,
+.contact__textarea,
+.contact__button {
+    display: block;
+    border:   1px solid #202020;
+    background-color:  #282828;
+}
+.contact__input,
+.contact__textarea {
+    font-size: 16px;
+    font-style: italic;
+    margin: 21px 0;
+    letter-spacing: 0.5px;
+    color:  #9b9b9b;
+}
+
+.contact__input::-webkit-input-placeholder {color:#878787;}
+.contact__input::-moz-placeholder          {color:#878787;}/* Firefox 19+ */
+.contact__input:-moz-placeholder           {color:#878787;}/* Firefox 18- */
+.contact__input:-ms-input-placeholder      {color:#878787;}
+
+
+.contact__input {   
+    width: 100%;
+    height: 49px;
+    padding: 19px 19px 19px 43px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contact__input_name {
+    color: red;
+}
+.contact__input-wrap {
+    position: relative;
+}
+.contact__input-wrap:before {
+    content: "";    
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+.contact__input-wrap_name:before {
+    background: url("../img/User (Male).svg") no-repeat;    
+    width: 16px;
+    height: 15px;
+    left: 15px;
+    top: 16px;    
+}
+
+.contact__input-wrap_email:before {   
+    background: url("../img/Mail.svg") no-repeat;    
+    width: 16px;
+    height: 12px;
+    left: 15px;
+    top: 18px;    
+}
+
+.contact__input-wrap_url:before {    
+    background: url("../img/Globe.svg") no-repeat;   
+    width: 16px;
+    height: 16px;
+    left: 15px;
+    top: 16px;   
+}
+
+.contact__textarea {
+    width: 100%;
+    height: 160px;
+    padding: 19px;
+    box-sizing: border-box;
+}
+.contact__button {
+    width: 127px;
+    height: 48px;
+
+    color:  #7f7f7f;
+    font-size: 18px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-top: 29px;
+}
+.contact__about {
+    width: 50%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+.contact__about-author {
+    float: left;
+    width: calc(100% - 200px);
+}
+.contact__about-photo {
+    float: left;
+}
+.contact__about-title {
+    float: left;
+    color:  #9b9b9b;
+    font-size: 16px;
+}
 
 @media (max-width: 767px) {
     .services__item {
