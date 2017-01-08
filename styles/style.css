@@ -276,6 +276,8 @@ header {
     display: block;
     float: left;
     box-sizing: border-box;
+    padding-left: 11px;
+    margin-top: -2px;
 }
 .contact__about-author {
     float: left;
@@ -283,11 +285,46 @@ header {
 }
 .contact__about-photo {
     float: left;
+    margin-right: 18px;
+    border: 1px solid rgba(155, 155, 155, 0.5);
 }
 .contact__about-title {
     float: left;
     color:  #9b9b9b;
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -2px;
+}
+.contact__about-text {
+    line-height: 22px;
+    margin-right: -8px;
+}
+.contact__social {
+    margin-top: 15px;
+}
+
+.contact__about-links {
+    display: block; 
+    margin-top: 41px;   
+}
+
+.contact__about-links li {
+    display: block;
+    list-style-type: none;
+    font-style: italic;
+    color: #9b9b9b;
+    line-height: 20px;
+}
+
+.contact__about-links a {
+    color: #f0f0f0;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.contact__about-links .contact__social {
+    font-style: normal;
+    margin-top: 23px;
 }
 
 @media (max-width: 767px) {
