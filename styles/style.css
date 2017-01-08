@@ -327,6 +327,22 @@ header {
     margin-top: 23px;
 }
 
+.footer {
+    margin: 67px -2px 0 -2px;    
+    display: block;
+    border-top: 1px solid #666666;    
+}
+
+.footer__copy {
+    display: inline-block;
+    margin-top: 38px;
+    font-size: 12px;
+}
+
+.footer .social-networks {
+   margin-top: 29px; 
+}
+
 @media (max-width: 767px) {
     .services__item {
         width: 100%;
